@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/pagebkg"
+        >
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/lavanderhape"
+            android:alpha="0.8"
+            android:id="@+id/card"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fname"
+                android:text="O Player : "
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="70dp"
+                android:layout_marginLeft="50dp"
+                ></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fname"
+                android:id="@+id/sname"
+                android:text="X player : "
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="50dp"
+                ></TextView>
+            <EditText
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:id="@+id/firstname"
+                android:layout_toRightOf="@id/fname"
+                android:layout_marginTop="55dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold|italic"
+                android:textSize="14dp"
+                android:hint="Enter"
+                ></EditText>
+
+            <EditText
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:id="@+id/Secondname"
+                android:layout_toRightOf="@id/sname"
+                android:layout_below="@id/firstname"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:textStyle="bold|italic"
+                android:textSize="14dp"
+                android:hint="Enter"
+                ></EditText>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/Secondname"
+                android:layout_marginTop="35dp"
+                android:layout_marginLeft="100dp"
+                android:background="@drawable/lavanderhape"
+                android:text="Play"
+                android:id="@+id/play"
+                ></androidx.appcompat.widget.AppCompatButton>
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
